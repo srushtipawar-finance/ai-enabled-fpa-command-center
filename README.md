@@ -3,11 +3,9 @@
 
 ## Project Overview
 
-This project builds an AI-enabled FP&A command center for a fintech-style subscription business. The goal is to create a finance system that helps management understand revenue performance, budget vs actual variance, profitability trends, customer churn, customer acquisition cost, cash runway, and future financial performance.
+This project builds an AI-enabled FP&A command center for a fintech-style subscription business. The goal is to help management analyze revenue performance, budget vs actual variance, profitability trends, churn, CAC, cash runway, and 12-month forecast scenarios.
 
-The project combines corporate finance, financial modeling, SQL-based reporting, Python analytics, and Power BI dashboarding to turn raw operating data into executive-level financial insights.
-
-Instead of only analyzing historical financial statements, this project simulates how an FP&A team would support monthly business reviews, forecast planning, cost control, and strategic decision-making inside a growing fintech company.
+The project combines financial modeling, SQL-based reporting, Python analytics, and Power BI dashboarding to turn operating data into executive-level finance insights.
 
 ---
 
@@ -15,35 +13,33 @@ Instead of only analyzing historical financial statements, this project simulate
 
 NovaPay Analytics is a fictional fintech subscription company that provides payment and analytics tools to small and mid-sized retail businesses.
 
-The company earns revenue through four main streams:
+The company earns revenue through:
 
 - Monthly subscription fees
 - Transaction processing fees
 - Premium analytics add-ons
 - One-time setup and implementation fees
 
-As the company grows, management needs better visibility into financial performance. Revenue is increasing, but churn, customer acquisition cost, cloud hosting costs, and department-level expenses are creating pressure on EBITDA and cash runway.
+As the company grows, management needs better visibility into revenue quality, expense control, EBITDA performance, and cash runway.
 
-This project creates a finance command center to help answer the key question:
+Key question:
 
 **Is the company growing profitably, and what actions should management take next?**
 
 ---
 
-## Business Questions Answered
+## Business Questions
 
-This project is designed to answer the following finance and business questions:
+This project answers:
 
 1. Why did actual revenue beat or miss budget?
 2. Which revenue stream is driving growth?
 3. Which customer segments are most profitable?
-4. How are churn and customer acquisition cost affecting revenue quality?
+4. How are churn and CAC affecting profitability?
 5. Which expense categories are creating margin pressure?
-6. What is the company’s EBITDA trend?
-7. How much cash runway does the company have?
-8. What is the 12-month revenue and EBITDA forecast?
-9. What happens under base, upside, and downside scenarios?
-10. What management actions can improve profitability and financial performance?
+6. What is the 12-month revenue and EBITDA forecast?
+7. What happens under base, upside, and downside scenarios?
+8. What actions can improve financial performance?
 
 ---
 
@@ -60,9 +56,7 @@ This project is designed to answer the following finance and business questions:
 
 ---
 
-## Finance Concepts Covered
-
-This project applies key FP&A and corporate finance concepts, including:
+## Finance Concepts Applied
 
 - Budget vs actual variance analysis
 - Revenue forecasting
@@ -72,8 +66,7 @@ This project applies key FP&A and corporate finance concepts, including:
 - Scenario planning
 - Sensitivity analysis
 - Cash runway analysis
-- Customer churn analysis
-- Customer acquisition cost analysis
+- Churn and CAC analysis
 - Recurring revenue analysis
 - Revenue bridge
 - EBITDA bridge
@@ -84,109 +77,72 @@ This project applies key FP&A and corporate finance concepts, including:
 
 ## Project Workflow
 
-The project follows a real-world FP&A workflow:
-
-### 1. Data Creation and Preparation
+### 1. Data Preparation
 Created a 24-month operating dataset for a fintech subscription business, including revenue, expenses, budget, customer metrics, and scenario assumptions.
 
-### 2. SQL-Based Financial Reporting
-Used SQL to organize and analyze financial data across revenue streams, expense categories, customer segments, and monthly performance trends.
+### 2. SQL Reporting
+Used SQL to analyze revenue streams, expense categories, customer segments, variance trends, churn, and profitability.
 
 ### 3. Excel FP&A Model
-Built an Excel-based FP&A model covering revenue, expenses, gross margin, EBITDA, budget variance, scenario planning, and sensitivity analysis.
+Built a monthly FP&A model covering revenue, expenses, gross margin, EBITDA, budget variance, scenario planning, and sensitivity analysis.
 
-### 4. Python Forecasting and Automation
+### 4. Python Analytics
 Used Python for data cleaning, variance flagging, anomaly detection, revenue forecasting, EBITDA forecasting, and automated finance commentary.
 
-### 5. Power BI Executive Dashboard
-Designed an interactive dashboard to visualize financial KPIs, budget vs actual results, profitability trends, forecast scenarios, and management recommendations.
+### 5. Power BI Dashboard
+Designed an executive dashboard to visualize KPIs, budget vs actual results, unit economics, profitability trends, forecasts, and management recommendations.
 
 ### 6. CFO-Style Reporting
-Prepared an executive summary and management review deck to communicate key insights, risks, and recommended actions.
+Prepared an executive memo and CFO review deck to communicate insights, risks, and recommended actions.
 
 ---
 
 ## Dataset Structure
 
-The project uses multiple connected datasets:
-
-### Customers Table
-Includes customer profile information such as customer ID, industry, region, company size, signup date, subscription plan, and customer status.
-
-### Revenue Table
-Tracks monthly revenue by customer and revenue stream, including subscription revenue, transaction fee revenue, premium analytics revenue, setup fee revenue, and total revenue.
-
-### Expense Table
-Tracks monthly budgeted and actual expenses by department, expense category, vendor, and cost type.
-
-### Budget Table
-Contains monthly budget assumptions for revenue, COGS, operating expenses, and EBITDA.
-
-### KPI Metrics Table
-Tracks active customers, new customers, lost customers, churn rate, average revenue per customer, CAC, gross margin, and net revenue retention.
-
-### Scenario Inputs Table
-Includes base, upside, and downside scenario assumptions for customer growth, churn, pricing, transaction volume, payroll inflation, and marketing spend.
+| Dataset | Description |
+|---|---|
+| Customers | Customer profile, industry, region, plan type, signup date, and status |
+| Revenue | Monthly revenue by customer and revenue stream |
+| Expenses | Budgeted and actual expenses by department, category, vendor, and cost type |
+| Budget | Monthly budget assumptions for revenue, COGS, operating expenses, and EBITDA |
+| KPI Metrics | Active customers, churn, CAC, ARPC, gross margin, and net revenue retention |
+| Scenario Inputs | Base, upside, and downside assumptions for growth, churn, pricing, and costs |
 
 ---
 
-## Key Analysis Areas
-
-### Revenue Performance
-Analyzes monthly revenue trends, revenue stream contribution, customer growth, recurring revenue behavior, and revenue variance against budget.
-
-### Budget vs Actual Variance
-Compares actual financial results against budget to identify favorable and unfavorable variances across revenue, COGS, operating expenses, and EBITDA.
-
-### Unit Economics
-Evaluates fintech SaaS-style metrics such as churn, CAC, average revenue per customer, gross margin, and net revenue retention.
-
-### Profitability Analysis
-Analyzes gross profit, operating expenses, EBITDA, EBITDA margin, and key cost drivers affecting profitability.
-
-### Forecasting and Scenario Planning
-Builds 12-month revenue and EBITDA forecasts under base, upside, and downside scenarios.
-
-### Management Recommendations
-Translates financial analysis into business recommendations focused on revenue growth, cost control, churn reduction, and margin improvement.
-
----
-
-## Planned Dashboard Pages
-
-The Power BI dashboard will include the following pages:
+## Dashboard Pages
 
 1. **CFO Executive Summary**  
-   High-level view of revenue, EBITDA, margin, churn, CAC, cash runway, and forecast performance.
+   Revenue, EBITDA, margin, churn, CAC, cash runway, and forecast performance.
 
 2. **Budget vs Actual Analysis**  
-   Monthly comparison of actual results against budget, with variance dollars and variance percentages.
+   Revenue and expense variance by month, category, and department.
 
 3. **Revenue and Unit Economics**  
-   Revenue by stream, customer growth, churn, CAC, average revenue per customer, and net revenue retention.
+   Revenue streams, customer growth, churn, CAC, ARPC, and net revenue retention.
 
 4. **P&L and Margin Analysis**  
-   Revenue, COGS, gross profit, operating expenses, EBITDA, and profitability trends.
+   Revenue, COGS, gross profit, operating expenses, EBITDA, and margin trends.
 
 5. **Forecast and Scenario Planning**  
    12-month revenue and EBITDA forecast with base, upside, and downside scenarios.
 
 6. **Management Recommendations**  
-   Key risks, cost optimization opportunities, growth levers, and recommended next actions.
+   Key risks, cost optimization opportunities, growth levers, and recommended actions.
 
 ---
 
-## Planned Deliverables
+## Deliverables
 
 | Deliverable | Description |
 |---|---|
 | Excel FP&A Model | Monthly P&L, budget variance, scenarios, sensitivity analysis, revenue bridge, and EBITDA bridge |
-| SQL Query File | Financial reporting queries for revenue, expenses, variance, churn, and profitability |
+| SQL Query File | Reporting queries for revenue, expenses, variance, churn, and profitability |
 | Python Notebook | Data cleaning, variance flags, anomaly detection, forecasting, and automated commentary |
-| Power BI Dashboard | Executive finance dashboard with KPI and scenario analysis |
-| Executive Memo | One-page summary of findings and recommendations |
-| CFO Review Deck | Presentation-style summary for management review |
-| Screenshots | Dashboard and model screenshots for quick recruiter review |
+| Power BI Dashboard | Executive dashboard with KPI, variance, forecast, and scenario analysis |
+| Executive Memo | One-page summary of insights and recommendations |
+| CFO Review Deck | Management-style presentation summarizing findings |
+| Screenshots | Dashboard and model screenshots for quick review |
 
 ---
 
